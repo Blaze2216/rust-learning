@@ -15,13 +15,13 @@ fn main() {
     let num2 = plus_one(5);
     println!("The value of num2 is: {num2}");
 }
-
+// Parameters pass name: type
 fn another_function(value: u8, char_value: char) {
     println!("The value is: {value}");
     println!("The of char is: {char_value}");
 } 
 
-fn five() -> i32 {
+fn five() -> i32 /* This is the return type -> i32 */ {
     5
 }
 
