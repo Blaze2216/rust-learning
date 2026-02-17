@@ -15,15 +15,12 @@ fn main() {
        // } // r1 goes out of the scope so we can make new references with no problem
         
        // let _r2 = &mut s1;
-        
 
 	change(&mut s1);
 
-        let r0 = &s1;
-        let r1 = &s1;
-        let r2 = &mut s1;
-
-        println!("the value of {r0}, {r1}, {r2}");
+        let _r1 = &s1;
+        let _r2 = &s1;
+        let _r3 = &mut s1;
 
         
 }
