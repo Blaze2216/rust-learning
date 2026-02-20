@@ -31,7 +31,14 @@ fn main() {
     let r2 = &mut s1;
     println!("the value of {r2}");
 
+    let reference_to_something = no_dangle();
+    println!("{reference_to_something}");
         
+}
+
+fn no_dangle() -> String {
+	let s = String::from("Hello, Blaze");
+	s
 }
 
 //fn calculate_length(str: &String) -> usize { // str is a reference to a string
