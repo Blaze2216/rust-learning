@@ -19,11 +19,17 @@ fn main() {
 
 	change(&mut s1);
 
-        let r0 = &s1;
-        let r1 = &s1;
-        let r2 = &mut s1;
+	// can't use at the same time both unmutable and mutable
+	//let r0 = &s1;
+    //let r1 = &s1;
+    //let r2 = &mut s1;
 
-        println!("the value of {r0}, {r1}, {r2}");
+    let r0 = &s1;
+    let r1 = &s1;
+    println!("the value of {r0}, {r1}"); // variables r0 and r1 will not be used after this
+
+    let r2 = &mut s1;
+    println!("the value of {r2}");
 
         
 }
